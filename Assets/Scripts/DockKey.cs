@@ -20,7 +20,7 @@ public class DockKey : MonoBehaviour
     }
     private void OnTriggerStay(Collider collision)
     {
-        if(collision.GetComponent<Move>())
+        if(collision.GetComponent<Player>())
         {
             if(inv.item2 == true)
             {
@@ -37,7 +37,7 @@ public class DockKey : MonoBehaviour
     }
     private void OnTriggerExit(Collider collision)
     {
-        if(collision.GetComponent<Move>())
+        if(collision.GetComponent<Player>())
         {      
             notice.SetActive(false);
         }  

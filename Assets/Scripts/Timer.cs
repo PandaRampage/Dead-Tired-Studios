@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
 	tText.text = string.Format("{0:00}:{1:00}", min, sec);
 	if (rTime <= 0)
 	{
-	    UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+	    UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
 	}
     }
 }

@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
         verticalMove = Input.GetAxis("Vertical") * moveSpeed;
         dir = transform.forward * verticalMove + transform.right * horizontalMove;
         cc.Move(dir * Time.deltaTime);
-        if (Input.GetButtonDown("Jump") && isGround)
+        if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
             velocity.y = jumpSpeed;
         }

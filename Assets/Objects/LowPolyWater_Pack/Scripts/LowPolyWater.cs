@@ -99,9 +99,9 @@ namespace LowPolyWater
         }
         private void OnTriggerEnter(Collider collision)
         {
-            if(collision.GetComponent<Move>())
+            if(collision.GetComponent<Player>())
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
             }
         }
     }
