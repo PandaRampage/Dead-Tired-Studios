@@ -6,7 +6,9 @@ public class DockKey : MonoBehaviour
 {
     public Inventory inv;
     public GameObject notice;
-    public GameObject image;
+    public InvMan invMan;
+    public Items i2p;
+    //public GameObject image;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,17 +24,19 @@ public class DockKey : MonoBehaviour
     {
         if(collision.GetComponent<Player>())
         {
-            if(inv.item2 == true)
-            {
                 notice.SetActive(true);
                 if(Input.GetKey(KeyCode.Mouse0))
                 {
+
+                    notice.SetActive(false);
+                    //image.SetActive(true);
+                    if (inv.item3 == false)
+                    {
+                    invMan.AddItems(i2p);
                     inv.Get3();
                     Destroy(gameObject);
-                    notice.SetActive(false);
-                    image.SetActive(true);
+                    }
                 }
-            }
         }
     }
     private void OnTriggerExit(Collider collision)
