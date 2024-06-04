@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour
     public bool item2 = false;
     public bool item3 = false;
     public bool item4 = false;
+    public bool item5 = false;
     //Start is called before the first frame update
     void Awake()
     {
@@ -36,5 +37,9 @@ public class Inventory : MonoBehaviour
     public void Get4()
     {
         item4 = true;
+    }
+    public void Get5()
+    {
+        item5 = true;
     }
 }
