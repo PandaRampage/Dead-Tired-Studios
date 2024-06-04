@@ -6,22 +6,9 @@ public class RoomKey : MonoBehaviour
 {
     public Inventory inv;
     public GameObject notice;
-    //public GameObject image;
-    //public GameObject timer;
-    //public Animator anim;
     public InvMan invMan;
     public Items i2p;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void OnTriggerStay(Collider collision)
     {
         if(collision.GetComponent<Player>())
@@ -31,7 +18,6 @@ public class RoomKey : MonoBehaviour
             {
 
                 notice.SetActive(false);
-                //anim.SetBool("item1", true);
                 Destroy(gameObject);
                 
                 if (inv.item1 == false)
