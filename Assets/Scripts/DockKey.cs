@@ -30,10 +30,10 @@ public class DockKey : MonoBehaviour
 
                     notice.SetActive(false);
                     //image.SetActive(true);
-                    if (inv.item3 == false)
+                    if (inv.item2 == false)
                     {
                     invMan.AddItems(i2p);
-                    inv.Get3();
+                    inv.Get2();
                     Destroy(gameObject);
                     }
                 }

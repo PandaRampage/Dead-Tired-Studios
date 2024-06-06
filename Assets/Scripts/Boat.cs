@@ -17,14 +17,14 @@ public class Boat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(inv.item3 == true)
+        if(inv.item2 == true)
         {
             partiBoat.SetActive(true);
         }
     }
     private void OnTriggerStay(Collider collision)
     {
-        if(collision.GetComponent<Player>() && inv.item3 == true)
+        if(collision.GetComponent<Player>() && inv.item2 == true)
         {
             noticeEs.SetActive(true);
             if(Input.GetKey(KeyCode.Mouse0))
