@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Objects/apple.meta
+guid: 0d7e3b29e20f9ac4e974858439ae2035
+folderAsset: yes
+DefaultImporter:
+========
 guid: 0a924551c4429279eac8982899c507b1
 NativeFormatImporter:
+>>>>>>>> 73132d11d6266e6600a85cbd93822ed507d23c68:Assets/Items/Beer.asset.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
